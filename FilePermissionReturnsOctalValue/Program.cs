@@ -51,7 +51,8 @@ namespace FilePermissionReturnsOctalValue
 
         public static void Main(string[] args)
         {
-            var permission = CalcPermissions("rwx-x--r-");
+            // Should write 752
+            var permission = CalcPermissions("rwxr-x-w-");
 
             foreach (var item in permission)
             {
